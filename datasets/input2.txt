@@ -1,0 +1,6 @@
+n=5,l=3,t=5
+actga
+ctgaa
+gacta
+caggt
+ggcgg

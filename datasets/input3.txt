@@ -1,0 +1,4 @@
+n=3,l=2,t=3
+cta
+gat
+cga
