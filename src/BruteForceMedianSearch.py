@@ -1,12 +1,12 @@
-import itertools, re
+import itertools
 
 class BruteForceMedianSearch:
     """Class to implement the Brute Force Median Search algorithm to find the median motif"""
-    def __init__(self, dna: str, l: int) -> None:
+    def __init__(self, dna: list, l: int) -> None:
         """Init method
 
         Required Args
-            dna (str): DNA string
+            dna (list): DNA sequences
             l (int): length of l-mer
         """
         self.dna = dna
@@ -14,7 +14,7 @@ class BruteForceMedianSearch:
 
     def TotalDistance(self, optimisticWord: str) -> int:
         """Method to calculate the minimum hamming distance of a pattern
-        
+
         Required Args
             optimisticWord (str): prospective motif pattern
 
@@ -32,7 +32,7 @@ class BruteForceMedianSearch:
 
     def main(self) -> str:
         """Method to carry out the algorithm
-        
+
         Returns
             str: median motif
         """
