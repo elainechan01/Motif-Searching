@@ -4,3 +4,6 @@ __pycache__/
 
 # venv
 venv/
+
+# ds_store
+.DS_Store
