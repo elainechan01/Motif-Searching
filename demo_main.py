@@ -6,6 +6,7 @@ def main():
     conf = {}
     # Brute Force Median Search
     bfms_dataset = open("datasets/bfms_demo.txt", "r")
+    bfms_dataset.readline()     # skip header
     primer = bfms_dataset.readline().strip().split(",")
     for config in primer:
         conf[config[0]] = int(config[2:])
@@ -21,6 +22,7 @@ def main():
 
     # Greedy Motif Search
     gms_dataset = open("datasets/gms_demo.txt", "r")
+    gms_dataset.readline()     # skip header
     primer = gms_dataset.readline().strip().split(",")
     for config in primer:
         conf[config[0]] = int(config[2:])

@@ -1,3 +1,4 @@
+# reference: https://bioinformaticsalgorithms.com/data/debugdatasets/motifs/GreedyMotifSearch.pdf
 k=5,t=8
 GAGGCGCACATCATTATCGATAACGATTCGCCGCATTGCC
 TCATCGAATCCGATAACTGACACCTGCTCTGGCACCGCTC

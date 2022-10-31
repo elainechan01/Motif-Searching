@@ -1,3 +1,4 @@
+# reference: chapter 4 slides
 n=68,l=8,t=5
 cctgatagacgctatctggctatccacgtacgtaggtcctctgtgcgaatctatgcgtttccaaccat
 agtactggtgtacatttgatacgtacgtacaccggcaacctgaaacaaacgctcagaaccagaagtgc

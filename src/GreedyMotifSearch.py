@@ -27,7 +27,7 @@ class GreedyMotifSearch:
             list: count matrix of ACGT nucleotides
         """
         CountMatrix = []
-        for i in range(self.k):
+        for i in range(self.k):     # TODO: laplace's rule of succession
             ColCount = {
                 'A': 0,
                 'C': 0,

@@ -22,8 +22,10 @@ class BruteForceMedianSearch:
             int: minimum hamming distance of a prospective pattern
         """
         totalDist = 0
+        # iterate through each dna sequence
         for pattern in self.dna:
             hammingDistance = []
+            # iterate through each l-mer
             for i in range(len(pattern) - self.l + 1):
                 word = pattern[i:i+self.l]
                 hammingDistance.append(sum(c1!=c2 for c1,c2 in zip(word, optimisticWord)))          # calculate hamming distance for current dna pattern                                 
