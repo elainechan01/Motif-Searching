@@ -40,7 +40,7 @@ class BruteForceMedianSearch:
         """
         bestWord = ""
         bestDist = len(self.dna) * ((len(self.dna[0]) - self.l + 1) * self.l)
-        for lmer in itertools.product('acgt', repeat=self.l):
+        for lmer in itertools.product('ACGT', repeat=self.l):
             optimisticWord = "".join(lmer)
             if self.TotalDistance(optimisticWord) < bestDist:
                 bestDist = self.TotalDistance(optimisticWord)

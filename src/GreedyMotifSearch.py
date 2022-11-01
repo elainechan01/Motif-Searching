@@ -118,4 +118,9 @@ class GreedyMotifSearch:
             # compare scores of current motif matrix and best motif matrix
             if self.CalculateScore(OptimisticMotifMatrix) < self.CalculateScore(BestMotifMatrix):
                 BestMotifMatrix = OptimisticMotifMatrix
-        return BestMotifMatrix
+        # test
+        consensus = ''
+        for i in range(len(BestMotifMatrix[0])):
+            colCount = Counter(row[i] for row in BestMotifMatrix)
+            consensus += max(colCount, key=colCount.get)
+        return consensus
